@@ -1,0 +1,18 @@
+﻿
+<hgroup class="title">
+    <h1>@ViewBag.titulo</h1>
+</hgroup>
+
+<br />
+
+<div id="mensaje">"Hola, escribiste: <span>@Html.Encode(ViewBag.palabra)</span>"</div>
+
+<div id="dialog" title="Numero de caracteres">
+    <p></p>
+</div>
+
+
+@section Scripts {
+    @Scripts.Render(@Url.Content("/Scripts/jquery-ui-1.8.24.js"))
+    @Scripts.Render(@Url.Content("/Scripts/contador.js"))
+}

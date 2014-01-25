@@ -1,0 +1,20 @@
+﻿
+<hgroup class="title">
+    <h1>@ViewBag.titulo</h1>
+</hgroup>
+
+<br />
+
+@using (Html.BeginForm( "Exito", "Formulario" ))
+{
+
+    <fieldset>
+        <legend>Escribe algo</legend>
+        <ol>
+            <li>
+                @Html.TextBox("palabra")
+            </li>
+        </ol>
+        <input type="submit" value="Ver" />
+    </fieldset>
+}
